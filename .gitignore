@@ -1,0 +1,38 @@
+# No need to have the following files on GitHub and Vercel.
+# Standard
+node_modules
+*.log*
+.env
+
+# dev, build and generate
+.nuxt
+.output
+dist
+
+# Yarn
+yarn.lock
+
+# INIT-FILES
+# Service-Worker
+public/sw*
+public/workbox*
+
+# Public folders and files
+public/1.article
+public/article
+public/convert
+public/webp.bat
+
+# Assets-folders
+assets
+assets/batfiles
+assets/guide
+
+# Root-folders and files
+# bubblewrap
+rss-sitemap.bat
+create-app.bat
+
+# The GITHUB_TOKEN_READ .env-variable is inserted manually on Vercel.
+# .npmrc
+.env-example
