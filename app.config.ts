@@ -7,9 +7,9 @@ export default defineAppConfig({
       version: pkg.version,
       description: pkg.description,
       homepage: pkg.homepage,
-      logo: '/img/svg/text-logo.svg'
+      logo: 'Kyrie Eleison'
     },
-    menu: { btn: 'Google' },
+    menu: { btn: 'Blog' },
     author: pkg.author,
     email: 'jur.eleison@gmail.com',
     avatar: '/img/svg/avatar.svg',
@@ -17,9 +17,9 @@ export default defineAppConfig({
     assetTypes: [],
     giscus: {
       repo: 'lovkyndig/pwa-starter-app',
-      repoId: 'R_kgDOKmGHzA',
+      repoId: 'R_kgDOKuIfCwR_kgDOKuIfCwR_kgDOKuIfCw',
       category: 'Comments',
-      categoryId: 'DIC_kwDOKmGHzM4Cavwl',
+      categoryId: 'DIC_kwDOKuIfC84Ca_5_',
       mapping: 'url',
       reactionsEnabled: '1',
       emitMetadata: '0',

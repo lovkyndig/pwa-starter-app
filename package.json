@@ -1,6 +1,6 @@
 {
   "name": "@lovkyndig/pwa-starter-app",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0-rc.2",
   "description": "This repo is used as starter for all new apps of Kyrie Eleison, published on Google App Store.",
   "homepage": "https://pwa-starter-app.vercel.app",
   "author": "Kyrie Eleison",
