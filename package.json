@@ -1,7 +1,7 @@
 {
   "name": "@lovkyndig/pwa-starter-app",
-  "version": "1.0.0-rc.2",
-  "description": "This repo is used as starter for all new apps of Kyrie Eleison, published on Google App Store.",
+  "version": "1.0.1",
+  "description": "This repo is used as starter for all new apps of Kyrie Eleison, published on Google Play Store.",
   "homepage": "https://pwa-starter-app.vercel.app",
   "author": "Kyrie Eleison",
   "repository": {
@@ -17,7 +17,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@lovkyndig/create-google-app": "latest"
+    "@lovkyndig/create-google-app": "^1.0.2-rc.1"
   },
   "keywords": [
     "starter"

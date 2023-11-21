@@ -17,7 +17,7 @@ export default defineAppConfig({
     assetTypes: [],
     giscus: {
       repo: 'lovkyndig/pwa-starter-app',
-      repoId: 'R_kgDOKuIfCwR_kgDOKuIfCwR_kgDOKuIfCw',
+      repoId: 'R_kgDOKuIfCw',
       category: 'Comments',
       categoryId: 'DIC_kwDOKuIfC84Ca_5_',
       mapping: 'url',
