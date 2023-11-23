@@ -1,4 +1,5 @@
 import pkg from './package.json'
+// import { capitalize } from './node_modules/@lovkyndig/create-google-app/utils/capitalize-method'
 
 export default defineAppConfig({
   myLayer: {
@@ -30,7 +31,7 @@ export default defineAppConfig({
     },
     privacy: {
       title: 'Privacy Policy following because this is an Google App.',
-        description: 'The Privacy Policy, Sitemap and Rss for "PWA Starter App". Privacy Policy is requrid for all Google Apps.',
+      description: 'The Privacy Policy, Sitemap and Rss for "PWA Starter App". Privacy Policy is requrid for all Google Apps.',
       notification: 'Privacy police is normally not recuried, but because this app is published on Google Play - Google need it.'
     },
     about: {

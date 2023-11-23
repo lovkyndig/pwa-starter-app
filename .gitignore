@@ -18,21 +18,15 @@ public/sw*
 public/workbox*
 
 # Public folders and files
-public/1.article
 public/article
 public/convert
-public/webp.bat
-
-# Assets-folders
-assets
-assets/batfiles
-assets/guide
+public/*.bat
 
 # Root-folders and files
-# bubblewrap
-rss-sitemap.bat
-create-app.bat
+*.bat
 
 # The GITHUB_TOKEN_READ .env-variable is inserted manually on Vercel.
 # .npmrc
-.env-example
+
+# bubblewrap
+bubblewrap

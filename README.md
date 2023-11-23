@@ -1,56 +1,66 @@
 # PWA Starter App
-I'm using this repo to start building all my apps. You can do it, you to, if you want!
+Use this template to start building your app.
 
-## Why use this starter?
-I'm using it as a starter kit, because I want the same theme in all my apps, and fokus on the `content` when I'm writing _articles_.
+## How to use it?
+### Two main-options with sub-options
 
-Maybe the most important thing is that the `content` on my pages is heavy (and serious) - and its about words, not pictures or videos. 
+| There are two main-options in GitHub: | ![](https://raw.githubusercontent.com/lovkyndig/pwa-starter-app/main/public/img/webp/two-buttons.webp) |
 
-When it takes about on hour to read only one article, you need the futrues in this repo with search-functionalities and collapseble accordions, and a amazing catalog with overview of the content.[^1]
+The buttons have two/ three sub-options:
 
-## Setup Environment
+| `<> Code`-btn | `Use this template`-btn |
+| --- | --- |
+| Download it | Create a new repository | 
+| Open in GitHub Desktop | Open in codespace | 
+| Create CodeSpace on Main |  | 
 
-1. clone this template, or download this project to your PC
+The best choice is `Codespace`.
 
-2. run the command in terminal to install dependent packages
+### Install
+This step is necessary if you don't select `Codespace`.
 
+If you already are a developer you know that you have to install the dependencies[^1] in the `packages.json`-file like this:
 ```bash
 npm install
-# OR
-yarn install
+```
+And then you know how to change `npm` with `yarn`, `npmn` etc.
+
+## The node-scripts
+If you open up the `package.json`-file you will see all the script-options:  
+```json
+"scripts": {
+  "dev": "nuxt dev",
+  "build": "nuxt build",
+  "generate": "nuxt generate && npx pagefind --source dist",
+  "preview": "nuxt preview"
+},
 ```
 
-:bulb: you should install [Node.js](https://nodejs.org/) first, and add the [yarn](https://yarnpkg.com/) (a package manager) globally in your local PC.
+If you don't want to use `yarn preview` options you have after running `yarn build` or `yarn generate`, you can type `yarn dev`, and open your browser on `localhost:3000`, to see how the website is looking like.[`2]
 
-## Write Articles
-
-run the command in terminal to start a development server
-
+### Pagefind
+If you don't want to add `_pagefind` to the `public`-folder every time you type `npm generate`, you can just change the **generate**-line and add a new `bach-/ batch`-command:
 ```bash
-npn run dev
-# OR
-yarn dev
+"generate": "nuxt generate",
+"pagefind": "npx pagefind --source dist"
 ```
 
-Wait a seconds you will see some output in the terminal, like `Local: https://localhost:3000` Then you can visit this url at your browser to preview the web page.
-
-You can start to write some articles by creating some markdown files inside the :file_folder: `/content/article` folder.
-
-:sparkles: Learn it by study the example article [here](https://github.com/Benbinbin/BlogiNote/blob/main/content/article/example/1.example-article-en.md).
-
-## Deploy
-
-1. run the command in terminal to pre-render the website[^2], AND for creating the pagefind-bundle.
-
+Then on the end when you are finish testing your repo with `dev / build / generate /preview`, you can just run:
 ```bash
-yarn generate
+npm pagefind
 ```
 
-2. You will get the `dist/` directory (symlink to `.output/public`), then you can deploy this folder to any static hosting server.
+Now the user has the possibility to search trough all your articles, and find word or strings.
 
-:bulb: Recommend to [deploy the project to Vercel](https://vercel.com/docs/deployments/git/vercel-for-github). If you want to deploy to other platform, please check out the [documentation of Nuxt](https://nuxt.com/docs/getting-started/deployment#static-hosting).
+## Content
+All the articles has to be written in `md`-format and placed in the `content`-folder.
 
-_Updated 02.11.2023_
+### MDC
+There are some `MD`-components that can be used. If someone else than me is using this template, send me a message or question, then I tell you about it.
 
-[^1]: The content in the `article`-folder is a copy of the articles in the template that is used: [Create Google App](https://github.com/lovkyndig/create-google-app). This `template` can be used (instead of this starter-kit) if you are an _open-source-programmer_.
-[^2]: I'm using generate to check if the website still is working, after big shanges in the code (if I'm unsure about the result). But also to generate a new pagefind-bundle (in _public_-folder), after big changes in the content.
+Or you can look inside `node_modules/@lovkyndig/create-google-app/components/content/`-folder. You find all the `mdc`.
+
+_Updated 22.11.2023_
+
+[^]: In this repo there are only one dependency: `@lovkyndig/create-google-app`. Of cause you need [Node.js](https://nodejs.org/) on your PC. And if you don't want to use `npm` you can add another package managers like [yarn](https://yarnpkg.com/) globally in your local PC.
+[^2]: If you don't have installed `yarn` in your local mashine, write: `npm help` to see how to use `npm`. `npm run dev` is the alternative to `yarn dev`.

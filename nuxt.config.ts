@@ -1,4 +1,6 @@
 import pkg from './package.json'
+// import { capitalize } from './node_modules/@lovkyndig/create-google-app/utils/capitalize-method'
+
 export default defineNuxtConfig({
   extends: '@lovkyndig/create-google-app',
   runtimeConfig: {
